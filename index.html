@@ -1,0 +1,64 @@
+<html lang = "en">
+    <head>
+        <title>Forms Review</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+        
+    </head>
+
+    <body>
+        <img src="./img/burger-svgrepo-com.svg" alt="burger" width="150">
+        <hr></hr>
+        <h1>Create a burger!</h1>
+
+        <section>
+            <form>
+                <label for = "type">What type of protein would you like?</label>
+                <input type = "text" name = "proteina" id="proteina">
+                <hr></hr>
+                <label for = "type">How many patties would you like?</label>
+                <input type = "number" min = "0" max = "10" name = "patties" id="patties">
+                <hr></hr>
+                <label for = "type">How do tou want your patty cooked</label>
+                <br>
+                Rare<input type = "range" min = "0" max="5" name = "cooked" id = "patties">Well-Done
+                <hr></hr>
+                <label for = "type">What toppings would you like?</label>
+                <br>
+                <label
+                ><input type = "checkbox" id = "topping1" value="Lettuce" />Lettuce</label>
+                <label
+                ><input type = "checkbox" id = "topping2" value="Tomato" />Tomato</label>
+                <label
+                ><input type = "checkbox" id = "topping3" value="Onion" />Onion</label>
+                <hr></hr>
+                <label for = "type">Would you like to add cheese</label>
+                <br>
+                <input type = "radio" name = "add_cheese" id = "1" value="yes">Yes</input>
+                <input type = "radio" name = "add_cheese" id = "1" value="no">No</input>
+                <hr></hr>
+                <label for = "type">What tipe of bun would you like?</label>
+                <select id="bun" name="bun">
+                    <option value = "sesame">Sesame</option>
+                    <option value = "potato">Potato</option>
+                    <option value = "pretzel">Pretzel</option>
+                </select>
+                <hr></hr>
+                <label for = "seleccion">What tipe of sauce would you like?</label>
+                <input type= "text" list = "sauce_list" name="sauce" id="sauce">
+                <datalist id="sauce_list">
+                    <option value="Ketchup">Ketchup</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="Mustard">Mustard</option>
+                </datalist>
+                <hr></hr>
+                <laber for = "type">Anything else you want to add?</laber>
+                <br>
+                <textarea id = "add" name = "add" cols="30" rows="5"></textarea>
+                <br>
+                <hr></hr>
+                <input type = "submit" name = "submit" id = "3" value="submit"></input>
+            </form>
+        </section>
+    </body>
+</html>
